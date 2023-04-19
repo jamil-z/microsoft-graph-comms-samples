@@ -34,5 +34,6 @@ jobs:
       - name: Deploy EchoBot
         run: |
           cd ./Samples/PublicSamples/EchoBot
+          . .\deploy.ps1 -orgName Modbit7 -Location eastus -RunSetup
           . .\deploy.ps1 -orgName Modbit7 -Location eastus -RunDeployment
 
