@@ -22,7 +22,6 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore --runtime win-x64 ./Samples/PublicSamples/EchoBot/src/EchoBot/EchoBot.csproj
 
-
   deploy:
     runs-on: windows-latest
     needs: build
@@ -31,10 +30,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Setup Azure PowerShell
+        uses: azure/powershell@v1
+        with:
+          azPSVersion: 'latest'
+          pwsh: true
+
       - name: Deploy EchoBot
         run: |
-          Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
           cd ./Samples/PublicSamples/EchoBot
           . .\deploy.ps1 -orgName Modbit7 -Location eastus -RunSetup
           . .\deploy.ps1 -orgName Modbit7 -Location eastus -RunDeployment
-
