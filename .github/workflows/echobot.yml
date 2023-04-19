@@ -20,7 +20,8 @@ jobs:
         run: dotnet restore ./Samples/PublicSamples/EchoBot/src/EchoBot/EchoBot.csproj
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore ./Samples/PublicSamples/EchoBot/src/EchoBot/EchoBot.csproj
+        run: dotnet build --configuration Release --no-restore --runtime win-x64 ./Samples/PublicSamples/EchoBot/src/EchoBot/EchoBot.csproj
+
 
   deploy:
     runs-on: windows-latest
