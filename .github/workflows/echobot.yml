@@ -30,10 +30,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Azure PowerShell
+      - name: Install Az module
         uses: azure/powershell@v1
         with:
-          azPSVersion: 'latest'
+          inlineScript: Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -AllowClobber
+          azPSVersion: latest
           pwsh: true
 
       - name: Deploy EchoBot
