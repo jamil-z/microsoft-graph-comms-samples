@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Owin.Host.HttpListener</id>
+    <version>4.2.0</version>
+    <title>Microsoft.Owin.Host.HttpListener</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/aspnet/AspNetKatana/</projectUrl>
+    <description>OWIN server built on the .NET Framework's HttpListener class. Currently the default server used for self-hosting.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft OWIN Katana</tags>
+  </metadata>
+</package>

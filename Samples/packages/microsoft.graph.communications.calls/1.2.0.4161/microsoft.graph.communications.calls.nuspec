@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Graph.Communications.Calls</id>
+    <version>1.2.0.4161</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://aka.ms/GraphComms</projectUrl>
+    <description>Microsoft Graph Communications Client Library - The Communications Calling stateful SDK.
+      Make, receive, and join calls with Microsoft Teams users.
+      Create voice and video enabled assistant bots.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft Graph Communications Calls</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Graph.Communications.Client" version="1.2.0.4161" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Graph.Communications.Core" version="1.2.0.4161" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.Graph.Communications.Client" version="1.2.0.4161" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Graph.Communications.Core" version="1.2.0.4161" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

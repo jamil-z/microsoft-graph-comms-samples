@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime</id>
+    <version>3.1.0-preview.1</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>pkgicon.png</icon>
+    <projectUrl>https://github.com/Azure/azure-sdk-for-net</projectUrl>
+    <description>Provides API functions for consuming the Microsoft Azure Cognitive Services LUIS Runtime API.</description>
+    <releaseNotes>This is a public release of the Cognitive Services LUIS Runtime SDK.
+
+    Changes in this release:
+      - Support the runtime v3.0 APIs.</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft Cognitive Services Cognitive Services Cognitive Services SDK LUIS Language Understanding Intelligent Service Language Understanding REST HTTP client</tags>
+    <repository type="git" url="https://github.com/Azure/azure-sdk-for-net" commit="ea18d1edbbf39c49bf15321397b90d6159b6292c" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="Microsoft.Rest.ClientRuntime" version="[2.3.20, 3.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Rest.ClientRuntime.Azure" version="[3.3.18, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Microsoft.Rest.ClientRuntime" version="[2.3.20, 3.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Rest.ClientRuntime.Azure" version="[3.3.18, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="Microsoft.Rest.ClientRuntime" version="[2.3.20, 3.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Rest.ClientRuntime.Azure" version="[3.3.18, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.Rest.ClientRuntime" version="[2.3.20, 3.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Rest.ClientRuntime.Azure" version="[3.3.18, 4.0.0)" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net" targetFramework=".NETFramework4.5.2, .NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5.2, .NETFramework4.6.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

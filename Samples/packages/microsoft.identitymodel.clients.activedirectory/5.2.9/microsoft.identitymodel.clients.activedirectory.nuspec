@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.IdentityModel.Clients.ActiveDirectory</id>
+    <version>5.2.9</version>
+    <title>Active Directory Authentication Library</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://go.microsoft.com/fwlink/?linkid=841311</licenseUrl>
+    <projectUrl>https://aka.ms/adalnet</projectUrl>
+    <description>There is a newer version of this library available here: https://www.nuget.org/packages/Microsoft.Identity.Client/
+      Migration guide: https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-net-migration
+      ADAL no longer receives new feature improvements.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Active Directory Authentication Library ADAL ActiveDirectory AD AAD Identity Authentication .NET Android iOS UWP NetCore Xamarin</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Private.Uri" version="4.3.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="Microsoft.CSharp" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Dynamic.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Private.Uri" version="4.3.2" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Formatters" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Json" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Cryptography.X509Certificates" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.SecureString" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XDocument" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlDocument" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="MonoAndroid8.1">
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Private.Uri" version="4.3.2" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Android.Support.CustomTabs" version="27.0.2.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="27.0.2.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="UAP10.0">
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NameResolution" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Private.Uri" version="4.3.2" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Json" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.ServiceModel.Http" version="4.4.4" exclude="Build,Analyzers" />
+        <dependency id="System.ServiceModel.NetTcp" version="4.4.4" exclude="Build,Analyzers" />
+        <dependency id="System.ServiceModel.Primitives" version="4.4.4" exclude="Build,Analyzers" />
+        <dependency id="System.ServiceModel.Security" version="4.4.4" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XDocument" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="Xamarin.iOS1.0">
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+        <dependency id="System.Private.Uri" version="4.3.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid8.1" />
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="MonoAndroid8.1, .NETFramework4.5, Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="MonoAndroid8.1, .NETFramework4.5, Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System" targetFramework="MonoAndroid8.1, .NETFramework4.5, Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.IdentityModel" targetFramework="MonoAndroid8.1, .NETFramework4.5, Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework="MonoAndroid8.1, Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework="MonoAndroid8.1, .NETFramework4.5, Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework="MonoAndroid8.1, .NETFramework4.5, Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.Data.DataSetExtensions" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
